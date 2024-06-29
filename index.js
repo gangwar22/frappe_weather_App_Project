@@ -1,3 +1,4 @@
+
 const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
@@ -22,6 +23,7 @@ const getCityCoordinates = () => {
             alert("An error occurred while fetching the coordinates!");
         });
 }
+
 
 // Function to get weather details based on coordinates
 const getWeatherDetails = (lat, lon) => {
