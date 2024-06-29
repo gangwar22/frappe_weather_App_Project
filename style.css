@@ -1,3 +1,4 @@
+
 /* Import Google font - Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 * {
@@ -160,6 +161,7 @@ h1 {
   margin: 5px 0 -12px 0;
 }
 
+
 @media (max-width: 1400px) {
   .weather-data .current-weather {
     padding: 20px;
@@ -200,3 +202,7 @@ h1 {
     font-size: 1.35rem;
   }
 }
+
+
+}
+
