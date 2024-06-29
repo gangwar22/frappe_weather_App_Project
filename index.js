@@ -5,6 +5,7 @@ const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
 const API_KEY = "3f3a9ec87f18b0c1136f4da517785b1a"; // API key for OpenWeatherMap API
 
+
 // Function to get city coordinates based on user input
 const getCityCoordinates = () => {
     const cityName = cityInput.value.trim();
@@ -26,6 +27,7 @@ const getCityCoordinates = () => {
 
 
 
+
 // Function to get weather details based on coordinates
 const getWeatherDetails = (lat, lon) => {
     const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
@@ -41,6 +43,7 @@ const getWeatherDetails = (lat, lon) => {
             alert("An error occurred while fetching the weather details!");
         });
 }
+
 
 // Function to display weather details
 const displayWeatherDetails = (data) => {
