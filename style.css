@@ -177,6 +177,7 @@ h1 {
   margin: 5px 0 -12px 0;
 }
 
+
 @media (max-width: 1400px) {
   .weather-data .current-weather {
     padding: 20px;
