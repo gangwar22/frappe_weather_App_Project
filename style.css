@@ -12,10 +12,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  background-image: url("https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg"); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
 }
 
 
@@ -70,7 +66,7 @@ h1 {
   justify-content: center;
 }
 .weather-input .separator::before {
-.weather-input .separator::before {
+
   content: "or";
   color: #6C757D;
   font-size: 1.18rem;
@@ -108,7 +104,6 @@ h1 {
 }
 .weather-data .current-weather {
   color: #fff;
-  background: rgba(83, 114, 240, 0.8); 
   background: rgba(83, 114, 240, 0.8); 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 5px;
@@ -152,7 +147,6 @@ h1 {
   padding: 18px 16px;
   list-style: none;
   width: 50%;
-  background: rgba(255, 255, 255, 0.8);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 5px;
