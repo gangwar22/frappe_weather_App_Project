@@ -1,9 +1,26 @@
+// Function to get weather details based on coordinates
+const getWeatherDetails = (lat, lon) => {
+    const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
+
+
+    fetch(WEATHER_API_URL)
+        .then(response => response.json())
+        .then(data => {
+            displayWeatherDetails(data);
+            saveLastSearch(data); // Save the data to local storage
+            console.log("data fetch", data);
+        })
+        .catch(() => {
+            alert("An error occurred while fetching the weather details!");
+        });
+}
 
 const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
 const API_KEY = "3f3a9ec87f18b0c1136f4da517785b1a"; // API key for OpenWeatherMap API
+
 
 // Function to get city coordinates based on user input
 const getCityCoordinates = () => {
@@ -24,22 +41,6 @@ const getCityCoordinates = () => {
         });
 }
 
-
-// Function to get weather details based on coordinates
-const getWeatherDetails = (lat, lon) => {
-    const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
-
-    fetch(WEATHER_API_URL)
-        .then(response => response.json())
-        .then(data => {
-            displayWeatherDetails(data);
-            saveLastSearch(data); // Save the data to local storage
-            console.log("data fetch", data);
-        })
-        .catch(() => {
-            alert("An error occurred while fetching the weather details!");
-        });
-}
 
 // Function to display weather details
 const displayWeatherDetails = (data) => {
