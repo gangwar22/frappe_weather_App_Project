@@ -3,7 +3,7 @@ const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
-const API_KEY = "3f3a9ec87f18b0c1136f4da517785b1a"; // API key for OpenWeatherMap API
+const API_KEY = "f3b3299107c49c7e27178ee9d98bab70"; // API key for OpenWeatherMap API
 
 
 // Function to get city coordinates based on user input
@@ -30,7 +30,7 @@ const getCityCoordinates = () => {
 
 // Function to get weather details based on coordinates
 const getWeatherDetails = (lat, lon) => {
-    const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
+    const WEATHER_API_URL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
 
     fetch(WEATHER_API_URL)
         .then(response => response.json())
