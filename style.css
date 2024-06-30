@@ -8,11 +8,15 @@
 }
 body {
   background: #E3F2FD;
-  background-image: url("https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg"); 
+  background-image: url("https://images.pexels.com/photos/774664/pexels-photo-774664.jpeg?auto=compress&cs=tinysrgb&w=600"); 
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
+  background-position: center; 
+  position: relative;
 }
+
+
 
 h1 {
   background: #5372F0;
@@ -164,6 +168,7 @@ h1 {
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .weather-cards .card:hover {
   transform: translateY(-10px);
   box-shadow: rgba(50, 50, 93, 0.35) 0px 50px 100px -20px, rgba(0, 0, 0, 0.4) 0px 30px 60px -30px, rgba(10, 37, 64, 0.45) 0px -2px 6px 0px inset;
