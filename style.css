@@ -8,15 +8,11 @@
 }
 body {
   background: #E3F2FD;
-  background-image: url("https://images.pexels.com/photos/774664/pexels-photo-774664.jpeg?auto=compress&cs=tinysrgb&w=600"); 
+  background-image: url("https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg"); 
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-  position: relative;
+  background-attachment: fixed; 
 }
-
-
 
 h1 {
   background: #5372F0;
