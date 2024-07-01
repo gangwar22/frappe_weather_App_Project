@@ -37,9 +37,12 @@ h1 {
   display: flex;
   gap: 35px;
   padding: 30px;
+  flex-wrap: wrap;
 }
 .weather-input {
-  width: 550px;
+  width: 50%;
+  max-width: 350px;
+  flex: 1;
 }
 
 .weather-input > h3 {
@@ -102,6 +105,8 @@ h1 {
 }
 .weather-data {
   width: 100%;
+  max-width: calc(100% - 50px - 35px);
+  flex: 1;
   animation: slideIn 1s ease-in-out;
 }
 @keyframes slideIn {
@@ -120,9 +125,10 @@ h1 {
   background: rgba(83, 114, 240, 0.8); 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 5px;
-  padding: 20px 70px 20px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .current-weather h2 {
   font-weight: 700;
@@ -136,9 +142,12 @@ h1 {
 }
 .current-weather .icon {
   text-align: center;
+  max-width: 150px; /* Added constraint */
+  max-height: 150px; /* Added constraint */
 }
 .current-weather .icon img {
-  max-width: 120px;
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 100%; /* Ensure the image fits within the container */
   margin-top: -15px;
 }
 .current-weather .icon h6 {
@@ -153,12 +162,13 @@ h1 {
 .days-forecast .weather-cards {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .weather-cards .card {
   color: black;
   padding: 18px 16px;
   list-style: none;
-  width: 50%;
+  width: calc(100% / 2 - 10px);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 5px;
@@ -215,7 +225,13 @@ h1 {
   .weather-input {
     width: 100%;
   }
+  .weather-data {
+    max-width: 100%;
+  }
   .weather-data h2 {
     font-size: 1.35rem;
+  }
+  .days-forecast .weather-cards .card {
+    width: 100%;
   }
 }
